@@ -1,0 +1,111 @@
+/* Designing Footer */
+
+.footerFrame1 {
+    background: #F5F7FA;
+    min-height:210px;
+    text-align:center;
+    padding:4rem 0;
+}
+
+.footerFrame1 h1 {
+    font-size:2.5rem;
+    opacity: 0.6;
+}
+
+.footerFrame1 button {
+    width:10rem;
+    height:3rem;
+    font-size:1rem;
+    border:none;
+    margin-top:1rem;
+    border-radius:0.5rem;
+    background: #4CAF4F;
+    color: #fff;
+}
+
+.footerFrame2 {
+    background:#263238;
+    color: #fff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:5rem;
+}
+
+.ff1 img {
+    width:15    rem;
+    height:auto;
+    margin-bottom:2rem;
+}
+
+.ff1 p {
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.35;
+}
+
+.sicon {
+    width:15rem;
+    display:flex;
+    justify-content:space-between;
+    margin-top:3rem;
+}
+
+.sicon img {
+    width: 2.5rem;
+    height:auto;
+}
+
+.ff2 {
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+
+.cpy, .spt, .sud {
+}
+
+.cpy h1, .spt h1, .sud h1 {
+    font-size:1.5rem;
+    opacity: 0.75;
+    margin-bottom: 1.5rem;
+}
+
+.cpy h5, .spt h5, .sud h5 {
+    font-size: 1rem;
+    margin: 0.85rem 0;
+    opacity: 0.55;
+    text-align: left;
+}
+
+.sud input {
+    width:170px;
+    border-radius:0.5rem 0 0 0.5rem;
+    outline:none;
+    color:white;
+}
+
+.sud input, .sud button {
+    height: 3rem;
+    border:none;
+    background: #515B60;
+    opacity: 0.45;
+}
+
+.rbtn input::placeholder,
+.rbtn input[type=email] {
+    color: #fff;
+    padding: 1rem;
+}
+
+.sud button {
+    border-radius: 0 0.5rem 0.5rem 0;
+    width: 3rem;
+}
+
+.rbtn {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

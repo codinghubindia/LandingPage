@@ -1,0 +1,221 @@
+/* home.css */
+
+.home {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.heroSection {
+    height: auto;
+    background: #F5F7FA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.frame {
+    width: 45%;
+    min-width: 300px;
+    text-align: left;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.illustration img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    color: #4D4D4D;
+}
+
+.text-decor {
+    color: #4CAF4F;
+}
+
+.herotext p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.button button {
+    width: 120px;
+    height: 40px;
+    color: white;
+    background: #4CAF4F;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.button button:hover {
+    transform: scale(1.05);
+    background: #45a049;
+}
+
+.dot {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.dot img {
+    width: 32px;
+    height: 6.96px;
+    position:relative;
+    top:-2.5rem;
+}
+
+.clients {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.client h1 {
+    font-size: 3rem;
+    color: #585858;
+    margin-bottom: 0.5rem;
+}
+
+.client p {
+    font-size: 1.5rem;
+    color: #585858;
+    margin-bottom: 2rem;
+}
+
+.clientLogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.clientLogo img {
+    width: 3rem;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.clientLogo img:hover {
+    transform: scale(1.5);
+}
+
+.community {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.communityText {
+    margin-bottom: 2rem;
+}
+
+.communityText h2 {
+    color: #4D4D4D;
+    font-size: 1.75rem;
+}
+
+.communityText p {
+    color: #4D4D4D;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.communityCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px #ABBED1;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.member img {
+    width: 45px;
+    height: auto;
+}
+
+.member h1 {
+    color: #4D4D4D;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.text p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .frame {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .illustration img {
+        max-width: 200px;
+    }
+
+    .communityCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
